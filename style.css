@@ -166,9 +166,16 @@ form{
 /*   Estilo Card Dinamica JS    */
 /* -----------------------------*/
 
-.card-dinamica{
-    
+.body-card{
+    width: 30rem;
+    height: 30rem;
+    border: 0.5px gray solid;
+    background-color: #48cfad;    
 }
+
+
+
+
 
 
 
