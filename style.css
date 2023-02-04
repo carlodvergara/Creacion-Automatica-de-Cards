@@ -170,15 +170,54 @@ form{
     width: 30rem;
     height: 30rem;
     border: 0.5px gray solid;
-    background-color: #48cfad;    
+    background-color: #48cfad;   
+    
+    display: flex;
+    flex-direction: column;
 }
 
 
+.image-vehicle{ 
+    width: auto;
+    height: 20rem;
+    
+}
 
+.text-area{ 
+    width: 100%;
+    height:10rem;
+    padding: 1rem;
 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:  center;
+    row-gap: 0.3rem;
 
+    background-color: whitesmoke;   
 
+}
 
+.brand-name{ 
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.model-name{
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+ }
+
+.year-number{ 
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: gray;
+    color: rgb(54, 54, 54);
+}
 
 
 

@@ -15,38 +15,21 @@ const inputSearch = document.querySelector('input-search');
 const listOfCards=[]
 
 
-// Evento click
+
 btnCreator.addEventListener('click', creationCard);
 
-function creatorLoop(){}
 
 function creationCard(){
 
-//Constructor de Objeto
-function dataBuilder(image,brand,model,year){
-    this.imagen = image
-    this.marca = brand
-    this.modelo = model
-    this.año = year
-}
-
-var newData = new dataBuilder(inputImage.value, inputBrand.value,inputModel.value,inputYear.value);
-
-
-// Empujador de Objeto creado a Lista de Card
-listOfCards.push(newData);
-
-
-function creatorLoop(listOfCards){
+   
 
 for (var element of listOfCards){
 
-    //Elementos Dinamicos
     const bodyCard = document.createElement('div');
     bodyCard.classList.add('body-card');   
 
     const img = document.createElement('img');
-    img.classList.add('---');   
+    img.classList.add('image-vehicle');   
     img.setAttribute('src' , element.imagen);
 
     const textArea = document.createElement('div');
@@ -64,7 +47,6 @@ for (var element of listOfCards){
     yearNumber.classList.add('year-number'); 
     yearNumber.innerText = element.año;
 
-    
     //Insercion de elementos
     containerCards.appendChild(bodyCard);
     bodyCard.appendChild(img);
@@ -72,24 +54,9 @@ for (var element of listOfCards){
     textArea.appendChild(brandName);
     textArea.appendChild(modelName);
     textArea.appendChild(yearNumber);
-
 }
 
-}
 
-return;
-
-}
-
-    
-
-
-
-inputSearch.addEventListener('entry', finderCard);
-
-function finderCard(){
-   var newSearch = listOfCards.find( (e)=> e === e.inputSearch.value);
-   return creatorLoop(newSearch);  
 
 }
 
