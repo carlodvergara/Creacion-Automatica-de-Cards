@@ -128,37 +128,55 @@ form{
 }
 
 
+
 /*-------------------------*/
 /*---    Area Cards     ---*/
 /*-------------------------*/
 
 .area-cards{
-    width: clamp(32rem, 100%, 120rem);
+    width: clamp(32rem, 100%, 100rem);
     height: 100%;
     padding: 2rem;
     background-color: gainsboro;
 }
 
 .container-finder{
-
     border-bottom: solid 0.5px rgb(208, 208, 208);
-    width: clamp(32rem, 100%, 120rem);
+    width: clamp(32rem, 100%, 100rem);
     height: 5rem;
     display: flex;
+    background-color: #e6e9ed;
+    align-items: center;
     justify-content: center;
+    column-gap: 1.5rem;
+
 }
 
 .input-search{
     width: clamp(32rem, 100%, 40rem);
 }
 
+.btn-search{
+    min-width: 10rem;
+    align-self: center;
+    cursor: pointer;
+    padding: 0.8rem;
+    font-family: "Roboto mono";
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: #e6e9ed;
+    border: solid 0.5px rgb(205, 205, 205);
 
+}
 
 .container-cards{
-    display: grid;
-    grid-template-columns: repeat(1fr, 320px);
-    grid-auto-flow: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
+
+
+
 
 
 
@@ -167,11 +185,10 @@ form{
 /* -----------------------------*/
 
 .body-card{
-    width: 30rem;
+    width: 25em;
     height: 30rem;
     border: 0.5px gray solid;
     background-color: #48cfad;   
-    
     display: flex;
     flex-direction: column;
 }
@@ -180,22 +197,18 @@ form{
 .image-vehicle{ 
     width: auto;
     height: 20rem;
-    
 }
 
 .text-area{ 
     width: 100%;
     height:10rem;
     padding: 1rem;
-
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content:  center;
     row-gap: 0.3rem;
-
     background-color: whitesmoke;   
-
 }
 
 .brand-name{ 
@@ -211,7 +224,7 @@ form{
     color: rgb(54, 54, 54);
  }
 
-.year-number{ 
+.number-year{ 
     font-size: 1.2rem;
     font-family: "Poppins";
     font-weight: 500;
