@@ -1,2 +1,3 @@
 # Creacion-Automatica-de-Cards
-Manipulacion DOM #1
+
+Este proyecto tiene como fin practicar, la manipulacion de estructuras de datos.

@@ -79,9 +79,10 @@ for (element of listOfCards){
 
 
 
-inputSearch.addEventListener('click', finder);
+btnSearch.addEventListener('click', finder);
 
 function finder(){
-    var newList = listOfCards.find((a)=> a === a.inputSearch);
+    var newList = listOfCards.find((a)=> a === a.inputSearch.value);
     containerCards.innerHTML = '';
+    return newList
 }
